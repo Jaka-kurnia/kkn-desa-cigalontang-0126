@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kkn-cigalontang-0126.netlify.app/sitemap.xml
