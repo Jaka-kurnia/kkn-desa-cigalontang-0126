@@ -40,7 +40,7 @@ export function Location() {
                   </div>
                   <div>
                     <h5 className="font-semibold text-sm">Kontak Person</h5>
-                    <p className="text-white/80 text-sm mt-1">+62 812-3456-7890 (Andi)</p>
+                    <p className="text-white/80 text-sm mt-1">+62 812-3456-7890 (Aldyana)</p>
                   </div>
                 </div>
               </div>

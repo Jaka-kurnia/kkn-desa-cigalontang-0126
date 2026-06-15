@@ -19,6 +19,7 @@ export function Navbar() {
     { name: "Filosofi", href: "#filosofi" },
     { name: "Anggota", href: "#anggota" },
     { name: "Lokasi", href: "#lokasi" },
+    { name: "Galeri", href: "#galeri" },
   ];
 
   return (
@@ -31,7 +32,7 @@ export function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 md:px-12 flex items-center justify-between">
         <a href="#home" className="flex items-center gap-2 group">
-          <div className="w-10 h-10 rounded-xl bg-[#8B5A2B] flex items-center justify-center text-white transition-transform group-hover:scale-105">
+          <div className="w-10 h-10 rounded-xl bg-[#8B5A2B] flex items-center justify-center text-white transition-transform group-hover:scale-105 shadow-lg">
             <Leaf size={24} />
           </div>
           <span className={`text-xl font-bold ${isScrolled ? "text-[#333333]" : "text-white drop-shadow-md"}`}>
