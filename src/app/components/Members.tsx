@@ -28,6 +28,7 @@ export function Members() {
       role: "Sekretaris l / Administrasi Bisnis",
       img: anisaImg,
     },
+    // 
     {
       name: "HELMI DEVANA NURSYAHRONI",
       role: "Sekretaris ll / Administrasi Bisnis",
