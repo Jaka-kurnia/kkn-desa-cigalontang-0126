@@ -8,6 +8,7 @@ import listiaImg from "./img/listia.jpeg";
 import nurhayatiImg from "./img/nurhayati.jpeg";
 import jakaImg from "./img/jaka.jpeg";
 import lisnaImg from "./img/lisna.jpeg";
+import anisaImg from "./img/anisa.jpeg";
 
 
 export function Members() {
@@ -25,7 +26,7 @@ export function Members() {
     {
       name: "ANISA RAHIM",
       role: "Sekretaris l / Administrasi Bisnis",
-      img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400",
+      img: anisaImg,
     },
     {
       name: "HELMI DEVANA NURSYAHRONI",
@@ -40,7 +41,7 @@ export function Members() {
     {
       name: "LISTIANINGSIH",
       role: "Bendahara ll / Manajemen Keuangan Perbankan",
-      img: listiaImg, // Reusing girl image since I only have 3 distinct good ones
+      img: listiaImg, 
     },
      {
       name: "YUNAN ARIFIN",
@@ -75,7 +76,7 @@ export function Members() {
       {
       name: "NURHAYATI",
       role: "Humas llll / Administrasi Bisnis",
-      img: nurhayatiImg, // Reusing girl image since I only have 3 distinct good ones
+      img: nurhayatiImg, 
     },
       {
       name: "ADHITYA RAHMAN PUTRA",
