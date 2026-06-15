@@ -1,12 +1,12 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import aldyImg from "./img/aldyana.JPG.jpeg";
+import aldyImg from "./img/aldyana.jpeg";
 import vanesaImg from "./img/vanesa.jpeg";
-import nadinImg from "./img/nadin.JPG.jpeg";
+import nadinImg from "./img/nadin.jpeg";
 import listiaImg from "./img/listia.jpeg";
 import nurhayatiImg from "./img/nurhayati.jpeg";
-import jakaImg from "./img/jaka.jpg";
+import jakaImg from "./img/jaka.jpeg";
 import lisnaImg from "./img/lisna.jpeg";
 
 
