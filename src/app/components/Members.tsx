@@ -24,12 +24,12 @@ export function Members() {
     },
     {
       name: "ANISA RAHIM",
-      role: "Sekretaris l / Administrasi Bisnisi",
+      role: "Sekretaris l / Administrasi Bisnis",
       img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400",
     },
     {
       name: "HELMI DEVANA NURSYAHRONI",
-      role: "Sekretaris ll / Administrasi Bisnisi",
+      role: "Sekretaris ll / Administrasi Bisnis",
       img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400",
     },
     {
