@@ -1,18 +1,26 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
+import aldyImg from "./img/aldyana.JPG.jpeg";
+import vanesaImg from "./img/vanesa.jpeg";
+import nadinImg from "./img/nadin.JPG.jpeg";
+import listiaImg from "./img/listia.jpeg";
+import nurhayatiImg from "./img/nurhayati.jpeg";
+import jakaImg from "./img/jaka.jpg";
+import lisnaImg from "./img/lisna.jpeg";
+
 
 export function Members() {
   const members = [
     {
       name: "ALDYANA",
       role: "Ketua  / Manajemen Informatika",
-      img: "https://images.unsplash.com/photo-1729821728830-068bbff90645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBib3klMjBzbWlsaW5nfGVufDF8fHx8MTc4MTM1MjA2N3ww&ixlib=rb-4.1.0&q=80&w=400",
+      img: aldyImg,
     },
     {
       name: "VANNECA DIVA FADILA",
       role: "Wakil Ketua / Manajemen Keuangan Perbankan",
-      img: "https://images.unsplash.com/photo-1615472096167-e2efc2f25dcd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50JTIwZ2lybCUyMGhpamFiJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400",
+      img: vanesaImg,
     },
     {
       name: "ANISA RAHIM",
@@ -27,12 +35,12 @@ export function Members() {
     {
       name: "NADIN PUTRI RAMADHANI",
       role: "Bendahara l / Manajemen Keuangan Perbankan",
-      img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400", // Reusing girl image since I only have 3 distinct good ones
+      img: nadinImg, 
     },
     {
       name: "LISTIANINGSIH",
       role: "Bendahara ll / Manajemen Keuangan Perbankan",
-      img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400", // Reusing girl image since I only have 3 distinct good ones
+      img: listiaImg, // Reusing girl image since I only have 3 distinct good ones
     },
      {
       name: "YUNAN ARIFIN",
@@ -62,12 +70,12 @@ export function Members() {
       {
       name: "JAKA KURNIA",
       role: "Humas lll / Manajemen Informatika",
-      img: "https://images.unsplash.com/photo-1729821728830-068bbff90645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBib3klMjBzbWlsaW5nfGVufDF8fHx8MTc4MTM1MjA2N3ww&ixlib=rb-4.1.0&q=80&w=400",
+      img: jakaImg,
     },
       {
       name: "NURHAYATI",
       role: "Humas llll / Administrasi Bisnis",
-      img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400", // Reusing girl image since I only have 3 distinct good ones
+      img: nurhayatiImg, // Reusing girl image since I only have 3 distinct good ones
     },
       {
       name: "ADHITYA RAHMAN PUTRA",
@@ -82,7 +90,7 @@ export function Members() {
       {
       name: "LISNA SARI NURHASANAH",
       role: "PDD lll / Manajemen Pemasaran",
-      img: "https://images.unsplash.com/photo-1729821728830-068bbff90645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBib3klMjBzbWlsaW5nfGVufDF8fHx8MTc4MTM1MjA2N3ww&ixlib=rb-4.1.0&q=80&w=400",
+      img: lisnaImg,
     },
   ];
 
