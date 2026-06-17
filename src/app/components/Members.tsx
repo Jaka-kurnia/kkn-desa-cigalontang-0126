@@ -12,7 +12,7 @@ import anisaImg from "./img/anisa.jpeg";
 import yunanImg from "./img/yunan.jpeg";
 import azzahraImg from "./img/azzahra.jpeg";
 import addhityaImg from "./img/aditya.jpeg";
-import nizarImg from "./img/nizar.jpeg";
+import nizarImg from "./img/nizarreal.jpeg";
 
 export function Members() {
   const members = [
