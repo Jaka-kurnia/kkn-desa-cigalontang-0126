@@ -18,7 +18,7 @@ export function Navbar() {
     const targetId = href.replace("#", "");
     const element = document.getElementById(targetId);
     if (element) {
-      const offset = 80; // approximate height of the sticky navbar
+      const offset = 80; 
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.scrollY - offset;
 
