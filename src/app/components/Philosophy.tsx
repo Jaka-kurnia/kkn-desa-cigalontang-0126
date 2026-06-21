@@ -24,7 +24,7 @@ export function Philosophy() {
 
   const topItem = { img: imgBuku, title: "Buku Terbuka", desc: "Menggambarkan identitas akademik mahasiswa. Simbol pembelajaran, edukasi, dan pertukaran pengetahuan selama KKN." };
   const bottomItem = { img: imgFigurManusia, title: "Figur Manusia", desc: "Sinergi antara mahasiswa, masyarakat, dan institusi. Mencerminkan kerja sama dan gotong royong membangun desa." };
-
+// p
   return (
     <section id="filosofi" className="py-24 bg-[#FAFAFA] font-['Poppins'] relative overflow-hidden">
       {/* Abstract Light Background Elements */}
