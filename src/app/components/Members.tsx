@@ -13,6 +13,9 @@ import yunanImg from "./img/yunan.jpeg";
 import azzahraImg from "./img/azzahra.jpeg";
 import addhityaImg from "./img/aditya.jpeg";
 import nizarImg from "./img/nizarreal.jpeg";
+import rismaImg from "./img/risma.jpeg";
+import jihanImg from "./img/jihan.jpeg";
+import helmiImg from"./img/helmi.jpeg";
 
 export function Members() {
   const members = [
@@ -35,7 +38,7 @@ export function Members() {
     {
       name: "HELMI DEVANA NURSYAHRONI",
       role: "Sekretaris ll / Administrasi Bisnis",
-      img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400",
+      img: helmiImg,
     },
     {
       name: "NADIN PUTRI RAMADHANI",
@@ -60,12 +63,12 @@ export function Members() {
     {
       name: "JIHAN INTAN SARI",
       role: "Pendidikan lll / Manajemen Keuangan Perbankan",
-      img: "https://images.unsplash.com/photo-1729821728830-068bbff90645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBib3klMjBzbWlsaW5nfGVufDF8fHx8MTc4MTM1MjA2N3ww&ixlib=rb-4.1.0&q=80&w=400",
+      img: jihanImg,
     },
     {
       name: "RISMA RISMAYA",
       role: "Humas l / Manajemen Informatika",
-      img: "https://images.unsplash.com/photo-1531299669378-dd18b44a8dbc?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBnaXJsJTIwc21pbGluZ3xlbnwxfHx8fDE3ODEzNTIwNjd8MA&ixlib=rb-4.1.0&q=80&w=400", // Reusing girl image since I only have 3 distinct good ones
+      img: rismaImg,
     },
     {
       name: "AZZAHRA PUTRI RAGIL",
