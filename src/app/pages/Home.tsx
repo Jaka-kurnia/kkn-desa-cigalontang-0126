@@ -3,6 +3,7 @@ import { Hero } from "../components/Hero";
 import { AboutVillage } from "../components/AboutVillage";
 import { Philosophy } from "../components/Philosophy";
 import { Members } from "../components/Members";
+import { Luaran } from "../components/Luaran";
 import { Location } from "../components/Location";
 import { Footer } from "../components/Footer";
 
@@ -15,6 +16,7 @@ export function Home() {
         <AboutVillage />
         <Philosophy />
         <Members />
+        <Luaran />
         <Location />
       </main>
       <Footer />

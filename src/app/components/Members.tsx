@@ -36,9 +36,9 @@ export function Members() {
     },
     //
     {
-      name: "HELMI DEVANA NURSYAHRONI",
+      name: "AZZAHRA PUTRI RAGIL",
       role: "Sekretaris ll / Administrasi Bisnis",
-      img: helmiImg,
+      img:azzahraImg,
     },
     {
       name: "NADIN PUTRI RAMADHANI",
@@ -71,9 +71,9 @@ export function Members() {
       img: rismaImg,
     },
     {
-      name: "AZZAHRA PUTRI RAGIL",
+      name: "MUHAMMAD ZULFAN ALI",
       role: "Humas ll / Administrasi Bisnis",
-      img: azzahraImg,
+      img: helmiImg,
     },
     {
       name: "JAKA KURNIA",
@@ -91,9 +91,9 @@ export function Members() {
       img: addhityaImg,
     },
     {
-      name: "MUHAMMAD ZULFAN ALI",
+      name: "HELMI DEVANA NURSYAHRONI",
       role: "PDD ll / Manajemen Pemasaran",
-      img: "https://images.unsplash.com/photo-1729821728830-068bbff90645?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxpbmRvbmVzaWFuJTIwY29sbGVnZSUyMHN0dWRlbnQlMjBib3klMjBzbWlsaW5nfGVufDF8fHx8MTc4MTM1MjA2N3ww&ixlib=rb-4.1.0&q=80&w=400",
+      img: helmiImg,
     },
     {
       name: "LISNA SARI NURHASANAH",

@@ -1,6 +1,6 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { ArrowRight, MapPin } from "lucide-react";
-import heroImg from "./img/pangangonan.jpg";
+import heroImg from "./img/about.jpeg";
 
 export function Hero() {
   return (
