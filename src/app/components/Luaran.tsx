@@ -14,7 +14,7 @@ import {
 import { XIcon, ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import { cn } from "./ui/utils";
 
-type Category = "Semua" | "MI" | "MP & AB" | "MKP" | "Buku & Jurnal";
+type Category = "Semua" | "MI" | "MP & AB" | "MKP" | "Buku" | "Jurnal";
 
 interface LuaranItem {
   id: number;
@@ -66,7 +66,7 @@ const luaranData: LuaranItem[] = [
     shortDesc: "Platform digital untuk pengelolaan informasi desa.",
     fullDesc:
       "Website Desa Cigalontang yang telah tersedia sebelumnya masih bersifat statis sehingga aparat desa belum dapat memperbarui informasi secara mandiri. Penyampaian informasi mengenai profil, kegiatan, potensi desa, dan UMKM melalui media digital juga belum optimal. Sekarang sudah tersedianya website Desa Cigalontang yang bersifat dinamis dan dapat dikelola oleh aparat desa. Website dapat digunakan untuk memperbarui informasi, menambahkan berita dan kegiatan desa, serta memperkenalkan profil, potensi, dan UMKM Desa Cigalontang kepada masyarakat secara lebih mudah dan terstruktur.",
-    image: "/",
+    image: "/Wdes.jpeg",
     category: "MI",
   },
   {
@@ -85,7 +85,8 @@ const luaranData: LuaranItem[] = [
     title: "Website Profile KKN Desa Cigalontang",
     shortDesc: "Platform digital untuk mempublikasikan kegiatan KKN dan Luaran KKN.",
     fullDesc:
-      "",
+      `Sebelum adanya website profil, kepengurusan dan hasil kerja tim mahasiswa KKN Desa Cigalontang tidak terdokumentasi secara terpusat dan terbuka. Struktur organisasi kelompok KKN—seperti susunan ketua, sekretaris, bendahara, hingga para penanggung jawab program—hanya tercantum dalam lembaran dokumen proposal atau laporan cetak. Kondisi ini membuat warga lokal maupun pihak kampus sulit mengetahui alur koordinasi dan siapa mahasiswa yang bertanggung jawab atas program tertentu. Sementara itu, seluruh luaran (output) KKN seperti peta tematik wilayah, buku panduan UMKM, modul edukasi, hingga video profil desa hanya tersimpan sebagai berkas fisik di kantor desa atau berkas digital di dalam drive pribadi mahasiswa. Akibatnya, luaran tersebut menjadi aset pasif yang cepat terlupakan, sulit diakses kembali oleh masyarakat, dan tidak berdampak jangka panjang setelah periode KKN berakhir.
+Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluruh hasil luaran program tersaji secara transparan, rapi, dan dapat diakses publik kapan saja. Struktur kelompok KKN kini tampil jelas lengkap dengan pembagian peran serta kontak koordinasi, sehingga mempermudah masyarakat desa dalam berkomunikasi dan berkolaborasi langsung dengan penanggung jawab program yang relevan. Lebih dari itu, website ini mentransformasi seluruh luaran KKN menjadi pustaka digital yang hidup. Warga dapat langsung mengunduh modul UMKM dan buku saku edukasi, melihat peta potensi desa secara interaktif, serta menyaksikan dokumentasi program melalui galeri digital. Hasil kontribusi mahasiswa KKN tidak lagi berhenti di lemari arsip, melainkan menjadi warisan digital (digital legacy) yang terus dimanfaatkan oleh Desa Cigalontang secara berkelanjutan.`,
     image: "/profkkn.png",
     category: "MI",
   },
@@ -219,30 +220,30 @@ const luaranData: LuaranItem[] = [
     fullDesc: "Usaha Pa Ajun belum memiliki identitas visual dan media promosi yang dapat menunjang pengenalan usaha kepada masyarakat. Pa Ajun telah memperoleh logo dan banner yang dapat digunakan sebagai identitas usaha serta mendukung kegiatan promosi kepada konsumen.",
     image: ["/BAJUN.png", "/LAJUN.JPG"],
     category: "MP & AB",
-   }
+   },
    
   
-  // {
-  //   id: 7,
-  //   title: "Jurnal Pengabdian: Transformasi Digital Desa",
-  //   shortDesc: "Artikel jurnal terindeks SINTA 4 tentang digitalisasi administrasi desa.",
-  //   fullDesc:
-  //     "Jurnal Pengabdian Masyarakat berjudul \"Transformasi Digital Administrasi Desa Cigalontang Melalui Sistem Informasi Berbasis Web\" telah diterbitkan di Jurnal Abdimas Teknologi (SINTA 4, Vol. 7 No. 2, 2024). Artikel ini mendokumentasikan proses pengembangan, implementasi, dan evaluasi sistem informasi desa serta dampaknya terhadap efisiensi layanan publik. Tersedia secara open access di portal jurnal universitas.",
-  //   image: "/placeholder-bukujurnal.svg",
-  //   category: "Buku & Jurnal",
-  // },
-  // {
-  //   id: 8,
-  //   title: "Buku Panduan Pemetaan Potensi Desa",
-  //   shortDesc: "Buku referensi metodologi partisipatif pemetaan sumber daya desa.",
-  //   fullDesc:
-  //     "Buku \"Pemetaan Partisipatif Potensi Desa: Metodologi dan Praktik di Desa Cigalontang\" (ISBN 978-623-XXX-XX-X) mengumpulkan metodologi Rapid Rural Appraisal (RRA) dan Participatory Rural Appraisal (PRA) yang disesuaikan konteks lokal. Berisi panduan langkah-langkah, studi kasus, templat formulir, dan rekomendasi kebijakan. Diterbitkan oleh LPPM Universitas Mitra, cetakan pertama 300 eksemplar.",
-  //   image: "/placeholder-bukujurnal.svg",
-  //   category: "Buku & Jurnal",
-  // },
+  {
+    id: 20,
+    title: "Jurnal Pengabdian: Pemberdayaan Wanita",
+    shortDesc: "",
+    fullDesc:
+      "",
+    image: "/placeholder-bukujurnal.svg",
+    category: "Jurnal",
+  },
+  {
+    id: 21,
+    title: "Buku Ronggeng ",
+    shortDesc: "",
+    fullDesc:
+      "",
+    image: "/placeholder-bukujurnal.svg",
+    category: "Buku",
+  },
 ];
 
-const categories: Category[] = ["Semua", "MI", "MP & AB", "MKP", "Buku & Jurnal"];
+const categories: Category[] = ["Semua", "MI", "MP & AB", "MKP", "Buku", "Jurnal"];
 
 export function Luaran() {
   const [activeCategory, setActiveCategory] = useState<Category>("Semua");
