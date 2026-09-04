@@ -153,7 +153,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo dan Banner UMKM Mak Iyos",
     shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Mak Iyos sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Promosi usaha Mak Iyos masih dilakukan tanpa didukung logo dan banner sebagai penanda usaha. Mak Iyos telah mendapatkan logo dan banner yang dapat dimanfaatkan untuk memperkenalkan produk sekaligus membuat usaha lebih mudah dikenali konsumen.",
-    image: ["/BIYOS.png", "LIYOS.png"],
+    image: ["/BIYOS.png", "/LIYOS.png"],
     category: "MP & AB",
    },
    {
@@ -169,7 +169,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner  Kripik Singkong Arnetta",
     shortDesc: "",
     fullDesc: "Identitas usaha Bu Teti belum didukung dengan logo maupun media promosi berupa banner. Bu Teti kini memiliki logo dan banner yang dapat digunakan dalam kegiatan promosi serta menjadi identitas bagi usahanya.",
-    image: ["/BARNETA.png", "LARNETA.png"],
+    image: ["/BARNETA.png", "/LARNETA.png"],
     category: "MP & AB",
    },
    {
@@ -201,7 +201,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner Kicimpring Mak Iyek",
     shortDesc: " ",
     fullDesc: "Usaha Mak Iyek belum memiliki identitas visual dan media promosi yang mendukung pengenalan produknya kepada masyarakat. Mak Iyek mendapatkan logo dan banner yang dapat digunakan sebagai identitas sekaligus sarana untuk mempromosikan produk usahanya.",
-    image: ["/BIYEK.png", "LIYEK.png"],
+    image: ["/BIYEK.png", "/LIYEK.png"],
     category: "MP & AB",
    },
    {
