@@ -17,6 +17,50 @@ import rismaImg from "./img/risma.jpeg";
 import jihanImg from "./img/jihan.jpeg";
 import helmiImg from"./img/helmi.jpeg";
 
+type Member = {
+  name: string;
+  role: string;
+  img: string;
+};
+
+const MemberCard = ({ member, idx }: { member: Member; idx: number }) => {
+  const roleParts = member.role.split('/');
+  const jabatan = roleParts[0]?.trim();
+  const prodi = roleParts[1]?.trim();
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: (idx % 4) * 0.1 }}
+      className="flex flex-col items-center text-center group"
+    >
+      <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden relative mb-5 shadow-lg border-4 border-white group-hover:shadow-2xl transition-all duration-500 group-hover:-translate-y-2 bg-zinc-100">
+        <ImageWithFallback
+          src={member.img}
+          alt={`Foto profil ${member.name}`}
+          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out"
+        />
+        <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center gap-3">
+          <a href="#" className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#333333] hover:text-white hover:bg-[#8B5A2B] transition-colors shadow-lg translate-y-4 group-hover:translate-y-0 duration-300">
+            <Instagram size={14} />
+          </a>
+          <a href="#" className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#333333] hover:text-white hover:bg-[#8B5A2B] transition-colors shadow-lg translate-y-4 group-hover:translate-y-0 duration-300 delay-75">
+            <Linkedin size={14} />
+          </a>
+          <a href="#" className="w-8 h-8 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#333333] hover:text-white hover:bg-[#8B5A2B] transition-colors shadow-lg translate-y-4 group-hover:translate-y-0 duration-300 delay-150">
+            <Mail size={14} />
+          </a>
+        </div>
+      </div>
+      <h3 className="text-lg font-bold text-[#333333] mb-1">{member.name}</h3>
+      <p className="text-sm text-[#8B5A2B] font-bold">{jabatan}</p>
+      {prodi && <p className="text-xs text-[#555555] mt-1">{prodi}</p>}
+    </motion.div>
+  );
+};
+
 export function Members() {
   const members = [
     {
@@ -66,22 +110,23 @@ export function Members() {
       img: jihanImg,
     },
     {
-      name: "RISMA RISMAYA",
-      role: "Humas l / Manajemen Informatika",
-      img: rismaImg,
+      name: "NURHAYATI",
+      role: "Humas l / Administrasi Bisnis",
+      img: nurhayatiImg,
     },
-    {
-      name: "MUHAMMAD ZULFAN ALI",
-      role: "Humas ll / Administrasi Bisnis",
-      img: helmiImg,
-    },
-    {
+      {
       name: "JAKA KURNIA",
-      role: "Humas lll / Manajemen Informatika",
+      role: "Humas ll / Manajemen Informatika",
       img: jakaImg,
     },
     {
-      name: "NURHAYATI",
+      name: "MUHAMMAD ZULFAN ALI",
+      role: "Humas lll / Manajemen Pemasaran",
+      img: helmiImg,
+    },
+  
+    {
+      name: "RISMA RISMAYA",
       role: "Humas llll / Administrasi Bisnis",
       img: nurhayatiImg,
     },
@@ -92,7 +137,7 @@ export function Members() {
     },
     {
       name: "HELMI DEVANA NURSYAHRONI",
-      role: "PDD ll / Manajemen Pemasaran",
+      role: "PDD ll / Administrasi Bisnis",
       img: helmiImg,
     },
     {
@@ -101,6 +146,13 @@ export function Members() {
       img: lisnaImg,
     },
   ];
+
+  const ketua = members[0];
+  const wakilKetua = members[1];
+  const sekreBenda = members.slice(2, 6);
+  const pendidikan = members.slice(6, 9);
+  const humas = members.slice(9, 13);
+  const pdd = members.slice(13, 16);
 
   return (
     <section id="anggota" className="py-24 bg-[#FAFAFA] font-['Poppins']">
@@ -111,33 +163,49 @@ export function Members() {
           <p className="text-[#555555]">Mengenal lebih dekat para mahasiswa berdedikasi di balik program-program pengembangan Desa Cigalontang.</p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {members.map((member, idx) => (
-            <motion.div key={idx} initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.5, delay: (idx % 4) * 0.1 }} className="bg-white rounded-3xl overflow-hidden shadow-[0_2px_10px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-2 transition-all duration-500 group flex flex-col border border-zinc-100">
-              <div className="w-full aspect-square overflow-hidden relative bg-zinc-100">
-                <ImageWithFallback src={member.img} alt={`Foto profil ${member.name}`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 ease-in-out" />
-                {/* Modern overlay gradient */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+        {/* Inti (Ketua & Wakil) */}
+        <div className="flex flex-col md:flex-row justify-center items-center gap-12 md:gap-24 mb-16">
+          <MemberCard member={ketua} idx={0} />
+          <MemberCard member={wakilKetua} idx={1} />
+        </div>
 
-                {/* Social icons overlay appearing on hover */}
-                <div className="absolute bottom-5 left-0 right-0 flex justify-center gap-3 translate-y-8 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#333333] hover:text-white hover:bg-[#8B5A2B] transition-colors shadow-lg">
-                    <Instagram size={18} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#333333] hover:text-white hover:bg-[#8B5A2B] transition-colors shadow-lg">
-                    <Linkedin size={18} />
-                  </a>
-                  <a href="#" className="w-10 h-10 rounded-full bg-white/90 backdrop-blur-sm flex items-center justify-center text-[#333333] hover:text-white hover:bg-[#8B5A2B] transition-colors shadow-lg">
-                    <Mail size={18} />
-                  </a>
-                </div>
-              </div>
+        {/* Sekretaris & Bendahara */}
+        <div className="text-center mb-8">
+          <h3 className="text-xl font-semibold text-[#333333] border-b-2 border-[#8B5A2B] inline-block pb-1">Sekretaris & Bendahara</h3>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
+          {sekreBenda.map((m, idx) => (
+            <MemberCard key={m.name} member={m} idx={idx + 2} />
+          ))}
+        </div>
 
-              <div className="p-6 flex flex-col items-center text-center flex-1 bg-white relative z-10">
-                <h3 className="text-lg font-bold text-[#333333] mb-1">{member.name}</h3>
-                <p className="text-sm text-[#8B5A2B] font-medium">{member.role}</p>
-              </div>
-            </motion.div>
+        {/* Divisi Pendidikan */}
+        <div className="text-center mb-8">
+          <h3 className="text-xl font-semibold text-[#333333] border-b-2 border-[#8B5A2B] inline-block pb-1">Divisi Pendidikan</h3>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-16 max-w-4xl mx-auto">
+          {pendidikan.map((m, idx) => (
+            <MemberCard key={m.name} member={m} idx={idx + 6} />
+          ))}
+        </div>
+
+        {/* Divisi Humas */}
+        <div className="text-center mb-8">
+          <h3 className="text-xl font-semibold text-[#333333] border-b-2 border-[#8B5A2B] inline-block pb-1">Divisi Humas</h3>
+        </div>
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-16">
+          {humas.map((m, idx) => (
+            <MemberCard key={m.name} member={m} idx={idx + 9} />
+          ))}
+        </div>
+
+        {/* Divisi PDD */}
+        <div className="text-center mb-8">
+          <h3 className="text-xl font-semibold text-[#333333] border-b-2 border-[#8B5A2B] inline-block pb-1">Divisi PDD</h3>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 max-w-4xl mx-auto">
+          {pdd.map((m, idx) => (
+            <MemberCard key={m.name} member={m} idx={idx + 13} />
           ))}
         </div>
       </div>
