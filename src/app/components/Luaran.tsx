@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { motion } from "motion/react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import {
@@ -21,9 +21,42 @@ interface LuaranItem {
   title: string;
   shortDesc: string;
   fullDesc: string;
-  image: string;
+  image: string | string[];
   category: Exclude<Category, "Semua">;
+  link?: string;
 }
+
+const ImageSlider = ({ images, className, objectFit = "cover" }: { images: string[], className?: string, objectFit?: "cover" | "contain" }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  return (
+    <div className={cn("relative overflow-hidden w-full h-full", className)}>
+      {images.map((img, idx) => (
+        <div
+          key={idx}
+          className={cn(
+            "absolute inset-0 w-full h-full transition-opacity duration-1000 ease-in-out",
+            idx === currentIndex ? "opacity-100 z-10" : "opacity-0 z-0"
+          )}
+        >
+          <ImageWithFallback
+            src={img}
+            alt={`Image ${idx + 1}`}
+            className={cn("w-full h-full", objectFit === "cover" ? "object-cover object-top" : "object-contain bg-white")}
+          />
+        </div>
+      ))}
+    </div>
+  );
+};
 
 const luaranData: LuaranItem[] = [
   {
@@ -45,6 +78,7 @@ const luaranData: LuaranItem[] = [
       "SDN 1 Cigalontong belum memiliki website resmi sebagai media publikasi dan penyebaran informasi sekolah. Informasi mengenai kegiatan, berita, dan prestasi siswa belum tersampaikan melalui media digital sekolah secara terstruktur. Sekarang telah tersedianya website resmi SDN 1 Cigalontong sebagai media publikasi informasi sekolah. Website dapat digunakan untuk menyampaikan berita, kegiatan, dan prestasi siswa kepada masyarakat serta telah diserahkan kepada pihak sekolah untuk dikelola dan diperbarui secara berkala.",
     image: "/sdciga.png",
     category: "MI",
+    link: "https://sdn1cigalontang.my.id/",
   },
   {
     id: 3,
@@ -111,7 +145,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo dan Banner UMKM Keripik NB",
     shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Keripik NB sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Usaha Bu Imin belum memiliki identitas visual dan media promosi yang dapat digunakan untuk memperkenalkan usaha kepada masyarakat. *After:* Usaha Bu Imin kini memiliki logo dan banner yang dapat digunakan untuk memperkenalkan serta memperkuat identitas usahanya.",
-    image: "/placeholder-mpab.svg",
+    image:["/BNB.png", "/LNB.jpg",],
     category: "MP & AB",
    },
    {
@@ -119,7 +153,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo dan Banner UMKM Mak Iyos",
     shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Mak Iyos sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Promosi usaha Mak Iyos masih dilakukan tanpa didukung logo dan banner sebagai penanda usaha. Mak Iyos telah mendapatkan logo dan banner yang dapat dimanfaatkan untuk memperkenalkan produk sekaligus membuat usaha lebih mudah dikenali konsumen.",
-    image: "/placeholder-mpab.svg",
+    image: ["/BIYOS.png", "LIYOS.png"],
     category: "MP & AB",
    },
    {
@@ -127,7 +161,7 @@ const luaranData: LuaranItem[] = [
     title: "Banner UMKM Snack Bu Ratih",
     shortDesc: "Banner UMKM sebagai identitas visual resmi UMKM Snack Bu Ratih sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Usaha Bu Ratih belum memiliki sarana promosi visual yang dapat menarik perhatian dan memberikan informasi kepada calon konsumen. Tersedianya banner memberikan Bu Ratih media promosi yang dapat digunakan untuk mengenalkan usaha dan produknya kepada masyarakat.",
-    image: "/placeholder-mpab.svg",
+    image: "/BRATIH.jpg",
     category: "MP & AB",
    },
    {
@@ -135,7 +169,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner  Kripik Singkong Arnetta",
     shortDesc: "",
     fullDesc: "Identitas usaha Bu Teti belum didukung dengan logo maupun media promosi berupa banner. Bu Teti kini memiliki logo dan banner yang dapat digunakan dalam kegiatan promosi serta menjadi identitas bagi usahanya.",
-    image: "/placeholder-mpab.svg",
+    image: ["/BARNETA.png", "LARNETA.png"],
     category: "MP & AB",
    },
    {
@@ -143,7 +177,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner Wajit Bu Ejet ",
     shortDesc: " ",
     fullDesc: "Usaha Bu Ejet belum memiliki media visual yang dapat menjadi ciri khas sekaligus membantu mengenalkan produknya kepada masyarakat. *After:* Dibuatkan logo dan banner yang dapat menjadi identitas usaha serta membantu meningkatkan pengenalan produk kepada konsumen. ",
-    image: "/placeholder-mpab.svg",
+    image: "/BEJET.png",
     category: "MP & AB",
    },
    {
@@ -159,7 +193,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo Pandai Besi Pak  Epen",
     shortDesc: " ",
     fullDesc: "Usaha Pak Epen belum mempunyai logo yang dapat dijadikan sebagai ciri khas dan identitas visual usaha. Pak Epen telah memiliki logo yang dapat digunakan sebagai identitas usaha dalam berbagai kebutuhan promosi.",
-    image: "/placeholder-mpab.svg",
+    image: "/LEPEN.png",
     category: "MP & AB",
    },
    {
@@ -167,7 +201,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner Kicimpring Mak Iyek",
     shortDesc: " ",
     fullDesc: "Usaha Mak Iyek belum memiliki identitas visual dan media promosi yang mendukung pengenalan produknya kepada masyarakat. Mak Iyek mendapatkan logo dan banner yang dapat digunakan sebagai identitas sekaligus sarana untuk mempromosikan produk usahanya.",
-    image: "/placeholder-mpab.svg",
+    image: ["/BIYEK.png", "LIYEK.png"],
     category: "MP & AB",
    },
    {
@@ -175,7 +209,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner UMKM Bu Ratna",
     shortDesc: " ",
     fullDesc: "Usaha Bu Ratna belum memiliki logo dan media promosi visual yang dapat membantu konsumen mengenali usaha dan produknya. Logo dan banner telah dibuat untuk Bu Ratna sehingga usaha memiliki identitas yang lebih jelas dan media untuk mendukung kegiatan promosi.",
-    image: "/placeholder-mpab.svg",
+    image: "/LRATNA.png",
     category: "MP & AB",
    },
    {
@@ -183,7 +217,7 @@ const luaranData: LuaranItem[] = [
     title: "Logo & Banner Pengrajin Pak Ajun",
     shortDesc: " ",
     fullDesc: "Usaha Pa Ajun belum memiliki identitas visual dan media promosi yang dapat menunjang pengenalan usaha kepada masyarakat. Pa Ajun telah memperoleh logo dan banner yang dapat digunakan sebagai identitas usaha serta mendukung kegiatan promosi kepada konsumen.",
-    image: "/placeholder-mpab.svg",
+    image: ["/BAJUN.png", "/LAJUN.JPG"],
     category: "MP & AB",
    }
    
@@ -277,13 +311,17 @@ export function Luaran() {
               className="group cursor-pointer bg-white rounded-2xl overflow-hidden shadow-[0_2px_10px_rgb(0,0,0,0.04)] hover:shadow-[0_20px_40px_rgb(0,0,0,0.08)] hover:-translate-y-2 transition-all duration-500 border border-zinc-100"
               onClick={() => openDetail(item)}
             >
-              <div className="w-full aspect-[4/3] overflow-hidden relative bg-zinc-100">
-                <ImageWithFallback
-                  src={item.image}
-                  alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-in-out"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <div className="w-full aspect-[4/3] overflow-hidden relative bg-zinc-100 flex">
+                {Array.isArray(item.image) ? (
+                  <ImageSlider images={item.image} objectFit="cover" className="group-hover:scale-105 transition-transform duration-700 ease-in-out" />
+                ) : (
+                  <ImageWithFallback
+                    src={item.image}
+                    alt={item.title}
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700 ease-in-out"
+                  />
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/0 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"></div>
                 <span className="absolute top-4 left-4 px-3 py-1 bg-white/90 backdrop-blur-sm text-xs font-semibold text-[#8B5A2B] rounded-full shadow-sm">
                   {item.category}
                 </span>
@@ -314,13 +352,28 @@ export function Luaran() {
         <DialogContent className="block max-w-[90vw] sm:max-w-[480px] lg:max-w-[640px] max-h-[90vh] overflow-y-auto p-0 border-none font-['Poppins']">
           {selectedItem && (
             <div className="flex flex-col w-full">
-              <div className="relative shrink-0 w-full aspect-video overflow-hidden bg-zinc-100">
-                <ImageWithFallback
-                  src={selectedItem.image}
-                  alt={selectedItem.title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent" />
+              <div className="relative shrink-0 w-full aspect-video overflow-hidden bg-zinc-100 flex">
+                {(() => {
+                   const isArray = Array.isArray(selectedItem.image);
+                   const InnerContent = isArray ? (
+                     <ImageSlider images={selectedItem.image as string[]} objectFit={selectedItem.link ? "cover" : "contain"} className={selectedItem.link ? "group-hover:scale-105 transition-transform duration-500" : ""} />
+                   ) : (
+                     <ImageWithFallback src={selectedItem.image as string} alt={selectedItem.title} className={cn("w-full h-full object-top", selectedItem.link ? "object-cover group-hover:scale-105 transition-transform duration-500" : "object-cover")} />
+                   );
+
+                   if (selectedItem.link) {
+                     return (
+                       <a href={selectedItem.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full cursor-pointer group">
+                         {InnerContent}
+                         <div className="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center z-20">
+                           <span className="px-4 py-2 bg-white/90 text-[#333333] font-semibold text-sm rounded-full shadow-lg">Kunjungi Website</span>
+                         </div>
+                       </a>
+                     );
+                   }
+                   return InnerContent;
+                })()}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/0 to-transparent pointer-events-none" />
                 <div className="absolute bottom-4 left-4 right-4 text-white sm:bottom-6 sm:left-6 sm:right-6">
                   <span className="px-3 py-1 bg-white/10 backdrop-blur-sm text-xs font-semibold rounded-full">
                     {selectedItem.category}
