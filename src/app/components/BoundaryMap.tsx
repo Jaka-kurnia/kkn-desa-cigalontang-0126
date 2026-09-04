@@ -135,8 +135,8 @@ export function BoundaryMap() {
         zoomControl={true}
       >
         <TileLayer
-          url="https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png"
-          attribution='&copy; OpenStreetMap contributors'
+          url="https://mt1.google.com/vt/lyrs=m&x={x}&y={y}&z={z}"
+          attribution='&copy; Google Maps'
         />
 
         {/* LAYER 1: Menggambar Batas LUAR KECAMATAN (Warna Abu-Abu Tipis / Dashed) */}

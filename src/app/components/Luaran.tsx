@@ -145,7 +145,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
     id: 10,
     title: "Logo dan Banner UMKM Keripik NB",
     shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Keripik NB sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
-    fullDesc: "Usaha Bu Imin belum memiliki identitas visual dan media promosi yang dapat digunakan untuk memperkenalkan usaha kepada masyarakat. *After:* Usaha Bu Imin kini memiliki logo dan banner yang dapat digunakan untuk memperkenalkan serta memperkuat identitas usahanya.",
+    fullDesc: "Usaha Bu Imin belum memiliki identitas visual dan media promosi yang dapat digunakan untuk memperkenalkan usaha kepada masyarakat. Setelah adanya program kerja, Usaha Bu Imin kini memiliki logo dan banner yang dapat digunakan untuk memperkenalkan serta memperkuat identitas usahanya.",
     image:["/BNB.png", "/LNB.jpg",],
     category: "MP & AB",
    },
@@ -168,7 +168,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
    {
     id: 13,
     title: "Logo & Banner  Kripik Singkong Arnetta",
-    shortDesc: "",
+    shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Keripik Singkong Arnetta sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Identitas usaha Bu Teti belum didukung dengan logo maupun media promosi berupa banner. Bu Teti kini memiliki logo dan banner yang dapat digunakan dalam kegiatan promosi serta menjadi identitas bagi usahanya.",
     image: ["/BARNETA.png", "/LARNETA.png"],
     category: "MP & AB",
@@ -176,15 +176,15 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
    {
     id: 14,
     title: "Logo & Banner Wajit Bu Ejet ",
-    shortDesc: " ",
-    fullDesc: "Usaha Bu Ejet belum memiliki media visual yang dapat menjadi ciri khas sekaligus membantu mengenalkan produknya kepada masyarakat. *After:* Dibuatkan logo dan banner yang dapat menjadi identitas usaha serta membantu meningkatkan pengenalan produk kepada konsumen. ",
+    shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Wajit Bu Ejet sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal. ",
+    fullDesc: "Usaha Bu Ejet belum memiliki media visual yang dapat menjadi ciri khas sekaligus membantu mengenalkan produknya kepada masyarakat. Setelah Dibuatkan logo dan banner yang dapat menjadi identitas usaha serta membantu meningkatkan pengenalan produk kepada konsumen. ",
     image: "/BEJET.png",
     category: "MP & AB",
    },
    {
     id: 15,
     title: "Banner Wajit Mak Eroh",
-    shortDesc: " ",
+    shortDesc: "Pembuatan banner sebagai identitas visual resmi UMKM Wajit Mak Eroh sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Pengenalan produk Mak Eroh kepada masyarakat belum didukung dengan media promosi berupa banner. Mak Eroh telah memiliki banner yang dapat digunakan untuk memberikan informasi mengenai usaha dan produk kepada konsumen.",
     image: "/placeholder-mpab.svg",
     category: "MP & AB",
@@ -192,7 +192,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
    {
     id: 16,
     title: "Logo Pandai Besi Pak  Epen",
-    shortDesc: " ",
+    shortDesc: "Pembuatan logo sebagai identitas visual resmi UMKM Pandai Besi Pak Epen sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal. ",
     fullDesc: "Usaha Pak Epen belum mempunyai logo yang dapat dijadikan sebagai ciri khas dan identitas visual usaha. Pak Epen telah memiliki logo yang dapat digunakan sebagai identitas usaha dalam berbagai kebutuhan promosi.",
     image: "/LEPEN.png",
     category: "MP & AB",
@@ -200,7 +200,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
    {
     id: 17,
     title: "Logo & Banner Kicimpring Mak Iyek",
-    shortDesc: " ",
+    shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Kicimpring Mak Iyek sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal. ",
     fullDesc: "Usaha Mak Iyek belum memiliki identitas visual dan media promosi yang mendukung pengenalan produknya kepada masyarakat. Mak Iyek mendapatkan logo dan banner yang dapat digunakan sebagai identitas sekaligus sarana untuk mempromosikan produk usahanya.",
     image: ["/BIYEK.png", "/LIYEK.png"],
     category: "MP & AB",
@@ -208,7 +208,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
    {
     id: 18,
     title: "Logo & Banner UMKM Bu Ratna",
-    shortDesc: " ",
+    shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Bu Ratna sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal. ",
     fullDesc: "Usaha Bu Ratna belum memiliki logo dan media promosi visual yang dapat membantu konsumen mengenali usaha dan produknya. Logo dan banner telah dibuat untuk Bu Ratna sehingga usaha memiliki identitas yang lebih jelas dan media untuk mendukung kegiatan promosi.",
     image: "/LRATNA.png",
     category: "MP & AB",
@@ -216,7 +216,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
    {
     id: 19,
     title: "Logo & Banner Pengrajin Pak Ajun",
-    shortDesc: " ",
+    shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Pengrajin Pak Ajun sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal. ",
     fullDesc: "Usaha Pa Ajun belum memiliki identitas visual dan media promosi yang dapat menunjang pengenalan usaha kepada masyarakat. Pa Ajun telah memperoleh logo dan banner yang dapat digunakan sebagai identitas usaha serta mendukung kegiatan promosi kepada konsumen.",
     image: ["/BAJUN.png", "/LAJUN.JPG"],
     category: "MP & AB",
