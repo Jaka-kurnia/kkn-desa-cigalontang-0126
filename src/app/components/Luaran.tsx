@@ -61,19 +61,18 @@ const ImageSlider = ({ images, className, objectFit = "cover" }: { images: strin
 const luaranData: LuaranItem[] = [
   {
     id: 1,
-    
     title: "Website Desa Cigalontang",
     shortDesc: "Platform digital untuk pengelolaan informasi desa.",
     fullDesc:
       "Website Desa Cigalontang yang telah tersedia sebelumnya masih bersifat statis sehingga aparat desa belum dapat memperbarui informasi secara mandiri. Penyampaian informasi mengenai profil, kegiatan, potensi desa, dan UMKM melalui media digital juga belum optimal. Sekarang sudah tersedianya website Desa Cigalontang yang bersifat dinamis dan dapat dikelola oleh aparat desa. Website dapat digunakan untuk memperbarui informasi, menambahkan berita dan kegiatan desa, serta memperkenalkan profil, potensi, dan UMKM Desa Cigalontang kepada masyarakat secara lebih mudah dan terstruktur.",
     image: "/Wdes.jpeg",
     category: "MI",
+    link: "https://desa-cigalontang-digital.my.id/",
   },
   {
     id: 2,
     title: "Website CMS SDN 1 Cigalontang",
     shortDesc: "Platform pengelolaan konten berbasis web.",
-
     fullDesc:
       "SDN 1 Cigalontong belum memiliki website resmi sebagai media publikasi dan penyebaran informasi sekolah. Informasi mengenai kegiatan, berita, dan prestasi siswa belum tersampaikan melalui media digital sekolah secara terstruktur. Sekarang telah tersedianya website resmi SDN 1 Cigalontong sebagai media publikasi informasi sekolah. Website dapat digunakan untuk menyampaikan berita, kegiatan, dan prestasi siswa kepada masyarakat serta telah diserahkan kepada pihak sekolah untuk dikelola dan diperbarui secara berkala.",
     image: "/sdciga.png",
@@ -85,10 +84,10 @@ const luaranData: LuaranItem[] = [
     title: "Website Profile KKN Desa Cigalontang",
     shortDesc: "Platform digital untuk mempublikasikan kegiatan KKN dan Luaran KKN.",
     fullDesc:
-      `Sebelum adanya website profil, kepengurusan dan hasil kerja tim mahasiswa KKN Desa Cigalontang tidak terdokumentasi secara terpusat dan terbuka. Struktur organisasi kelompok KKN—seperti susunan ketua, sekretaris, bendahara, hingga para penanggung jawab program—hanya tercantum dalam lembaran dokumen proposal atau laporan cetak. Kondisi ini membuat warga lokal maupun pihak kampus sulit mengetahui alur koordinasi dan siapa mahasiswa yang bertanggung jawab atas program tertentu. Sementara itu, seluruh luaran (output) KKN seperti peta tematik wilayah, buku panduan UMKM, modul edukasi, hingga video profil desa hanya tersimpan sebagai berkas fisik di kantor desa atau berkas digital di dalam drive pribadi mahasiswa. Akibatnya, luaran tersebut menjadi aset pasif yang cepat terlupakan, sulit diakses kembali oleh masyarakat, dan tidak berdampak jangka panjang setelah periode KKN berakhir.
-Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluruh hasil luaran program tersaji secara transparan, rapi, dan dapat diakses publik kapan saja. Struktur kelompok KKN kini tampil jelas lengkap dengan pembagian peran serta kontak koordinasi, sehingga mempermudah masyarakat desa dalam berkomunikasi dan berkolaborasi langsung dengan penanggung jawab program yang relevan. Lebih dari itu, website ini mentransformasi seluruh luaran KKN menjadi pustaka digital yang hidup. Warga dapat langsung mengunduh modul UMKM dan buku saku edukasi, melihat peta potensi desa secara interaktif, serta menyaksikan dokumentasi program melalui galeri digital. Hasil kontribusi mahasiswa KKN tidak lagi berhenti di lemari arsip, melainkan menjadi warisan digital (digital legacy) yang terus dimanfaatkan oleh Desa Cigalontang secara berkelanjutan.`,
+      `Website profil KKN Desa Cigalontang ini dirancang sebagai media informasi terpadu yang mempublikasikan profil singkat dan potensi desa, susunan struktur anggota kelompok KKN, sebaran titik lokasi kegiatan pengabdian, serta dokumentasi luaran program kerja yang telah direalisasikan secara transparan, informatif, dan mudah diakses oleh masyarakat luas.`,
     image: "/profkkn.png",
     category: "MI",
+    link: "https://kkn-desa-cigalontang-0126-apps.vercel.app/"
   },
   {
     id: 4,
@@ -105,7 +104,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
     shortDesc: "Buku pencatatan keuangan untuk UMKM di Desa Cigalontang.",
     fullDesc:
       "Sebagian besar UMKM di Desa Cigalontang belum melakukan pencatatan keuangan usaha secara teratur dan masih mencampurkan keuangan pribadi dengan keuangan usaha, sehingga sulit mengetahui kondisi pemasukan, pengeluaran, maupun laba rugi usaha. Setelah program kerja dilaksanakan, UMKM yang sudah menerima buku laporan keuangan dapat digunakan untuk mencatat pemasukan dan pengeluaran usaha secara lebih teratur, sehingga membantu pelaku UMKM dalam mengelola dan memantau kondisi keuangan usahanya.",
-    image: "/placeholder-mpab.svg",
+    image:["/kas1.jpg","/kas2.jpg"],
     category: "MKP",
   },
   {
@@ -114,7 +113,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
     shortDesc: "QRIS sebagai salah satu metode pembayaran non tunai.",
     fullDesc:
       "Sebelum program kerja dilaksanakan, Pak Iwa sebagai pedagang bubur di Desa Cigalontang belum memiliki metode pembayaran QRIS sehingga transaksi dengan konsumen masih dilakukan secara tunai. Setelah program kerja dilaksanakan, Pak Iwa telah memiliki QRIS yang siap digunakan untuk menerima pembayaran secara non-tunai, sehingga memberikan alternatif pembayaran yang lebih mudah dan praktis bagi konsumen serta mendukung digitalisasi dalam kegiatan usahanya.",
-    image: "/placeholder-mkp.svg",
+    image: "/qris.jpeg",
     category: "MKP",
   },
   {
@@ -138,7 +137,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
     title: "Logo BUMDes ",
     shortDesc: "Pembuatan logo sebagai identitas visual resmi BUMDes sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Sebelum program kerja dilaksanakan, BUMDes Desa Cigalontang belum memiliki logo sebagai identitas visual resmi karena BUMDes masih tergolong baru terbentuk. Kondisi tersebut membuat BUMDes belum memiliki identitas yang dapat merepresentasikan semangat kemandirian ekonomi desa dan potensi lokal. Setelah program kerja dilaksanakan, telah dibuat logo BUMDes Desa Cigalontang yang telah disepakati bersama oleh pihak BUMDes dan perangkat desa untuk digunakan sebagai identitas visual resmi dalam berbagai kegiatan dan media BUMDes.",
-    image: "/placeholder-mpab.svg",
+    image: "/LBUMDES.jpeg",
     category: "MP & AB",
   },
    {
@@ -186,7 +185,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
     title: "Banner Wajit Mak Eroh",
     shortDesc: "Pembuatan banner sebagai identitas visual resmi UMKM Wajit Mak Eroh sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal.",
     fullDesc: "Pengenalan produk Mak Eroh kepada masyarakat belum didukung dengan media promosi berupa banner. Mak Eroh telah memiliki banner yang dapat digunakan untuk memberikan informasi mengenai usaha dan produk kepada konsumen.",
-    image: "/placeholder-mpab.svg",
+    image: "/BEROH.png",
     category: "MP & AB",
    },
    {
@@ -210,7 +209,7 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
     title: "Logo & Banner UMKM Bu Ratna",
     shortDesc: "Pembuatan logo dan banner sebagai identitas visual resmi UMKM Bu Ratna sebagai representasi semangat kemandirian ekonomi desa dan potensi lokal. ",
     fullDesc: "Usaha Bu Ratna belum memiliki logo dan media promosi visual yang dapat membantu konsumen mengenali usaha dan produknya. Logo dan banner telah dibuat untuk Bu Ratna sehingga usaha memiliki identitas yang lebih jelas dan media untuk mendukung kegiatan promosi.",
-    image: "/LRATNA.png",
+    image: ["/BRATNA.jpeg", "/LRATNA.png"],
     category: "MP & AB",
    },
    {
@@ -225,10 +224,12 @@ Setelah website profil resmi diluncurkan, struktur organisasi tim KKN dan seluru
   
   {
     id: 20,
-    title: "Jurnal Pengabdian: Pemberdayaan Wanita",
-    shortDesc: "",
+    title: "Jurnal Pengabdian Pemberdayaan Wanita",
+    shortDesc: "Secara sederhana, jurnal ini ingin menunjukkan bahwa perempuan memiliki peran penting dalam pencegahan stunting karena perempuan banyak terlibat dalam menentukan makanan, merawat anak, mencari informasi kesehatan, dan mengambil keputusan kesehatan dalam keluarga. Oleh karena itu, pemberdayaan perempuan melalui edukasi kesehatan dan gizi dapat membantu membentuk keluarga yang lebih sadar kesehatan.",
     fullDesc:
-      "",
+      `Jurnal berjudul “Pemberdayaan Perempuan melalui Edukasi Kesehatan dan Gizi dalam Pencegahan Stunting sejak Remaja hingga Pengasuhan Anak di Desa Cigalontang” membahas upaya meningkatkan pengetahuan dan kesadaran perempuan mengenai kesehatan, gizi, serta pola pengasuhan sebagai langkah pencegahan stunting sejak dini. Jurnal ini menekankan bahwa pencegahan stunting tidak hanya dilakukan setelah anak lahir, tetapi perlu dimulai sejak masa remaja, pra-catin, kehamilan, masa nifas, menyusui, hingga pengasuhan anak
+        Kegiatan dilaksanakan di Desa Cigalontang, Kecamatan Cigalontang, Kabupaten Tasikmalaya, dengan melibatkan 45 peserta yang terdiri dari masyarakat, kader, bidan, TP PKK, dan pemerintah desa. Metode yang digunakan meliputi edukasi, penyampaian materi, diskusi, tanya jawab, observasi, dan dokumentasi. Materi yang diberikan mencakup kesehatan reproduksi, kebutuhan gizi, pemeriksaan kehamilan, kesehatan ibu dan anak, ASI, MPASI, pengasuhan balita, serta mitos dan fakta seputar kehamilan dan menyusui.
+        Hasil kegiatan menunjukkan bahwa peserta antusias dan aktif mengikuti kegiatan. Peserta juga menjadi lebih memahami cara membedakan informasi kesehatan yang benar dengan mitos yang berkembang di masyarakat serta semakin memahami pentingnya pencegahan stunting sejak sebelum kehamilan`,
     image: "/placeholder-bukujurnal.svg",
     category: "Jurnal",
   },
@@ -276,10 +277,12 @@ export function Luaran() {
   return (
     <section id="luaran" className="py-24 bg-white font-['Poppins']">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="text-center max-w-2xl mx-auto mb-16">
-          <h4 className="text-[#8B5A2B] font-semibold tracking-wider text-sm mb-3 uppercase">Luaran KKN</h4>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#333333] mb-4">Hasil Karya & Inovasi</h2>
-          <p className="text-[#555555]">Dokumentasi luaran program KKN yang berupa sistem, aplikasi, modul, dan produk nyata untuk Desa Cigalontang.</p>
+        <div className="text-center max-w-3xl mx-auto mb-16 px-4 sm:px-6">
+          <h4 className="text-[#8B5A2B] font-semibold tracking-[0.2em] text-sm mb-3 uppercase">Luaran KKN</h4>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-[#333333] mb-6 tracking-tight">Hasil Karya & Inovasi</h2>
+          <p className="text-zinc-600 text-base md:text-lg leading-relaxed md:leading-loose">
+            Luaran program KKN Desa Cigalontang menghadirkan kontribusi nyata di berbagai bidang, mulai dari digitalisasi lewat website desa dan sekolah, penguatan akuntabilitas melalui buku laporan keuangan, QRIS, pendampingan pemasaran visual UMKM (logo dan banner), hingga dokumentasi ilmiah berupa jurnal dan buku karya nyata.
+          </p>
         </div>
 
         <div className="flex flex-wrap justify-center gap-3 mb-12" role="tablist">
@@ -398,6 +401,12 @@ export function Luaran() {
                     <ChevronLeftIcon size={16} />
                     Kembali
                   </DialogClose>
+
+                  {selectedItem.link && (
+                    <a href={selectedItem.link} target="_blank" rel="noopener noreferrer" className="px-6 py-2 bg-[#8B5A2B] hover:bg-[#6b451f] text-white text-sm font-semibold rounded-full transition-colors shadow-md text-center w-full sm:w-auto">
+                      Kunjungi Website
+                    </a>
+                  )}
 
                   <DialogClose className="p-2 rounded-full bg-zinc-100 hover:bg-zinc-200 text-[#333333] transition-colors" aria-label="Tutup">
                     <XIcon size={18} />
