@@ -121,7 +121,7 @@ const luaranData: LuaranItem[] = [
     title: "Akun Market Place UMKM",
     shortDesc: "Akun marketplace BUMDES untuk mempromosikan produk UMKM di Desa Cigalontang.",
     fullDesc: "Sebelum program kerja dilaksanakan, sebagian besar UMKM di Desa Cigalontang masih melakukan penjualan secara offline dan belum memanfaatkan media digital maupun marketplace secara optimal. Keterbatasan pemahaman teknologi, terutama pada pelaku UMKM yang berusia lanjut, menjadi salah satu kendala dalam melakukan pemasaran dan penjualan secara online. Setelah program kerja dilaksanakan, dilakukan kerja sama dengan BUMDes Desa Cigalontang dalam pengelolaan marketplace melalui TikTok Shop sebagai wadah pemasaran dan penjualan produk UMKM secara online, sehingga produk UMKM Desa Cigalontang dapat dipasarkan secara lebih luas tanpa mengharuskan pelaku UMKM mengelola teknologi digital secara mandiri.",
-    image: "/placeholder-mpab.svg",
+    image: "/market.jpeg",
     category: "MP & AB",
   },
   {
@@ -129,7 +129,7 @@ const luaranData: LuaranItem[] = [
     title: "Akun Medsos BUMDes dan UMKM ",
     shortDesc: "Akun marketplace BUMDES untuk mempromosikan produk UMKM di Desa Cigalontang.",
     fullDesc: "Sebelum program kerja dilaksanakan, BUMDes Desa Cigalontang yang baru terbentuk pada tahun 2024 belum memiliki akun media sosial sebagai sarana untuk memperkenalkan profil BUMDes dan mempromosikan produk UMKM Desa Cigalontang. Selain itu, UMKM juga belum memiliki media khusus untuk melakukan pemasaran produk melalui konten digital. Setelah program kerja dilaksanakan, BUMDes Desa Cigalontang telah memiliki akun Instagram dan TikTok sebagai media publikasi dan promosi, serta dibuatnya akun TikTok UMKM yang dikelola oleh BUMDes untuk memasarkan produk melalui konten video. Dengan adanya akun tersebut, BUMDes dan UMKM memiliki media pemasaran digital yang dapat membantu memperluas jangkauan promosi, meningkatkan pengenalan produk, dan memudahkan masyarakat memperoleh informasi mengenai produk UMKM Desa Cigalontang.",
-    image: "/placeholder-mpab.svg",
+    image: "/medsos.jpeg",
     category: "MP & AB",
   },
   {
