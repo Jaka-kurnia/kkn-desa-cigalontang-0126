@@ -236,9 +236,28 @@ const luaranData: LuaranItem[] = [
   {
     id: 21,
     title: "Buku Ronggeng ",
-    shortDesc: "",
+    shortDesc: `Buku ini menelusuri perjalanan panjang wilayah Cigalontang, Tasikmalaya, dari sebuah daerah agraris yang sarat cerita rakyat hingga tumbuh menjadi kawasan dinamis di lereng Gunung Galunggung. Mengangkat kisah asal-usulnya dari legenda Aki dan Nini Lontang hingga rekam jejak perjuangan masyarakat lokal, buku ini merangkum sistem irigasi kuno Solokan Pasir, keanekaragaman tradisi syukuran bumi, serta peninggalan seni Ronggeng Gunung. Tidak hanya sekadar catatan sejarah masa lalu, narasi di dalamnya secara kritis menelaah transformasi sosial-ekonomi masyarakat Cigalontang saat ini serta menawarkan refleksi penting dalam menjaga kearifan lokal di tengah arus modernisasi.`,
     fullDesc:
-      "",
+      `Buku ini menghadirkan narasi historis dan antropologis yang kaya mengenai salah satu wilayah penting di Kabupaten Tasikmalaya. Tidak sekadar merekam dokumen tertulis dan cerita tutur, karya ini menggali nilai-nilai hidup yang membentuk karakter masyarakat Cigalontang dari masa ke masa.
+
+Struktur dan fokus pembahasan dalam buku ini mencakup:
+
+•Asal usul sejarah Cigalontang: Mengkaji akar penamaan Cigalontang melalui ingatan kolektif masyarakat. Diskusi berfokus pada mitos sosok Aki Lontang dan Nini Lontang sebagai simbol generasi awal yang membuka pemukiman dan membangun keharmonisan antara manusia dengan alam sekitar.
+
+•Kehidupan masyarakat dulu: Memotret pola hidup masyarakat Sunda tradisional di Cigalontang. Mengulas ketergantungan masyarakat pada sektor pertanian agraris, pengelolaan sumber mata air, serta etos kerja keras manual sebelum masuknya mekanisasi modern.
+
+•Warisan sejarah: Mengupas pembangunan Solokan Pasir sebuah saluran irigasi tradisional yang lahir dari semangat gotong royong warga. Poin ini menyoroti jenius lokal (local genius) masyarakat zaman dulu dalam rekayasa aliran air untuk menyokong ketahanan pangan.
+
+•Perkembangan Cigalontang: Menelusuri pergeseran lanskap wilayah Cigalontang dari era perintis hingga perkembangan pemekaran wilayah. Bab ini memaparkan bagaimana infrastruktur, akses transportasi, dan modernisasi mengubah tatanan ekonomi warga.
+
+•Tradisi budaya dan kearifan lokal: Merangkum kekayaan tradisi yang khas, seperti:
+  °Ritual Pertanian: Tradisi selamatan tanam/panen, pemilihan benih lokal secara mandiri, serta aturan penyajian makanan adat (nasi merah-putih, alas daun kelor, dan tumpeng lauk kambing/ayam hitam).
+  °Sistem Adat & Etika Lingkungan: Aturan adat (pamali) dalam menjaga kawasan hutan atau sumber mata air sakral.
+  °Kesenian Rakyat: Kehadiran instrumen musik gamelan, kendang, gong, serta seni pertunjukan Ronggeng Gunung yang dilestarikan oleh warga lokal.
+
+•Pelestarian budaya Cigalontang: Menganalisis strategi pemangku adat dan generasi muda dalam menjaga keberlanjutan tradisi agar kesenian serta ritual lokal tidak tergerus arus zaman.
+
+•Cigalontang di masa kini dan harapan di masa depan: Refleksi atas posisi Cigalontang saat ini sebagai wilayah potensial berbasis agrowisata dan pelestarian alam. Bab penutup ini menawarkan visi integrasi antara kearifan lokal (indigenous knowledge) dengan pembangunan berkelanjutan.`,
     image: "/placeholder-bukujurnal.svg",
     category: "Buku",
   },
