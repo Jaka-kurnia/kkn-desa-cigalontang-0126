@@ -89,15 +89,15 @@ const luaranData: LuaranItem[] = [
     category: "MI",
     link: "https://kkn-desa-cigalontang-0126-apps.vercel.app/"
   },
-  {
-    id: 4,
-    title: "Website CMS SDN Girilintang",
-    shortDesc: "Platform pengelolaan konten berbasis web.",
-    fullDesc:
-      "SDN Girilintang belum memiliki website resmi sebagai media publikasi dan penyebaran informasi sekolah. Informasi mengenai kegiatan, berita, dan prestasi siswa belum tersampaikan melalui media digital sekolah secara terstruktur. Sekarang telah tersedianya website resmi SDN Girilintang sebagai media publikasi informasi sekolah. Website dapat digunakan untuk menyampaikan berita, kegiatan, dan prestasi siswa kepada masyarakat serta telah diserahkan kepada pihak sekolah untuk dikelola dan diperbarui secara berkala.",
-    image: "/girilintang.png",
-    category: "MI",
-  },
+  // {
+  //   id: 4,
+  //   title: "Website CMS SDN Girilintang",
+  //   shortDesc: "Platform pengelolaan konten berbasis web.",
+  //   fullDesc:
+  //     "SDN Girilintang belum memiliki website resmi sebagai media publikasi dan penyebaran informasi sekolah. Informasi mengenai kegiatan, berita, dan prestasi siswa belum tersampaikan melalui media digital sekolah secara terstruktur. Sekarang telah tersedianya website resmi SDN Girilintang sebagai media publikasi informasi sekolah. Website dapat digunakan untuk menyampaikan berita, kegiatan, dan prestasi siswa kepada masyarakat serta telah diserahkan kepada pihak sekolah untuk dikelola dan diperbarui secara berkala.",
+  //   image: "/girilintang.png",
+  //   category: "MI",
+  // },
   {
     id: 5,
     title: "Buku Laporan Keuangan ",
