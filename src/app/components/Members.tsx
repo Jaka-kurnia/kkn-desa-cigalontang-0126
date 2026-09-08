@@ -1,21 +1,22 @@
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { Instagram, Linkedin, Mail } from "lucide-react";
 import { motion } from "motion/react";
-import aldyImg from "./img/aldyana.jpeg";
-import vanesaImg from "./img/vanesa.jpeg";
-import nadinImg from "./img/nadin.jpeg";
-import listiaImg from "./img/listia.jpeg";
-import nurhayatiImg from "./img/nurhayati.jpeg";
-import jakaImg from "./img/jaka.jpeg";
-import lisnaImg from "./img/lisna.jpeg";
-import anisaImg from "./img/anisa.jpeg";
-import yunanImg from "./img/yunan.jpeg";
-import azzahraImg from "./img/azzahra.jpeg";
-import addhityaImg from "./img/aditya.jpeg";
-import nizarImg from "./img/nizarreal.jpeg";
-import rismaImg from "./img/risma.jpeg";
-import jihanImg from "./img/jihan.jpeg";
-import helmiImg from"./img/helmi.jpeg";
+import aldyImg from "./image/aldiyana.jpeg";
+import vanesaImg from "./image/vanesa.jpeg";
+import nadinImg from "./image/nadin.jpeg";
+import listiaImg from "./image/listia.jpeg";
+import nurhayatiImg from "./image/nurhayati.jpeg";
+import jakaImg from "./image/jaka.jpeg";
+import lisnaImg from "./image/lisna.jpeg";
+import anisaImg from "./image/ica.jpeg";
+import yunanImg from "./image/yunan.jpeg";
+import azzahraImg from "./image/zahra.jpeg";
+import addhityaImg from "./image/aditya.jpeg";
+import nizarImg from "./image/nizar.jpeg";
+import rismaImg from "./image/risma.jpeg";
+import jihanImg from "./image/jihan.jpeg";
+import helmiImg from"./image/helmi.jpeg";
+import zulfanImg from "./image/zulfan.jpeg";
 
 type Member = {
   name: string;
@@ -95,20 +96,21 @@ export function Members() {
       img: listiaImg,
     },
     {
+      name: "JIHAN INTAN SARI",
+      role: "Pendidikan l / Manajemen Keuangan Perbankan",
+      img: jihanImg,
+    },
+    {
       name: "YUNAN ARIFIN",
-      role: "Pendidikan l  / Manajemen Pemasaran",
+      role: "Pendidikan ll  / Manajemen Pemasaran",
       img: yunanImg,
     },
     {
       name: "NIZAR ABDUSSALAM ",
-      role: "Pendidikan ll  / Manajemen Keuangan Perbankan",
+      role: "Pendidikan lll  / Manajemen Keuangan Perbankan",
       img: nizarImg,
     },
-    {
-      name: "JIHAN INTAN SARI",
-      role: "Pendidikan lll / Manajemen Keuangan Perbankan",
-      img: jihanImg,
-    },
+    
     {
       name: "NURHAYATI",
       role: "Humas l / Administrasi Bisnis",
@@ -122,28 +124,29 @@ export function Members() {
     {
       name: "MUHAMMAD ZULFAN ALI",
       role: "Humas lll / Manajemen Pemasaran",
-      img: helmiImg,
+      img: zulfanImg,
     },
   
     {
       name: "RISMA RISMAYA",
-      role: "Humas llll / Administrasi Bisnis",
-      img: nurhayatiImg,
+      role: "Humas llll / Manajemen Informatika",
+      img: rismaImg,
     },
     {
-      name: "ADHITYA RAHMAN PUTRA",
+      name: "LISNA SARI NURHASANAH",
       role: "PDD l / Manajemen Pemasaran",
-      img: addhityaImg,
+      img: lisnaImg,
     },
     {
       name: "HELMI DEVANA NURSYAHRONI",
       role: "PDD ll / Administrasi Bisnis",
       img: helmiImg,
     },
+    
     {
-      name: "LISNA SARI NURHASANAH",
+      name: "ADHITYA RAHMAN PUTRA",
       role: "PDD lll / Manajemen Pemasaran",
-      img: lisnaImg,
+      img: addhityaImg,
     },
   ];
 
