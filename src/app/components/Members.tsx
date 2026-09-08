@@ -6,7 +6,7 @@ import vanesaImg from "./image/vanesa.jpeg";
 import nadinImg from "./image/nadin.jpeg";
 import listiaImg from "./image/listia.jpeg";
 import nurhayatiImg from "./image/nurhayati.jpeg";
-import jakaImg from "./image/jaka.jpeg";
+import jakaImg from "./image/jack.jpeg";
 import lisnaImg from "./image/lisna.jpeg";
 import anisaImg from "./image/ica.jpeg";
 import yunanImg from "./image/yunan.jpeg";
