@@ -235,7 +235,7 @@ const luaranData: LuaranItem[] = [
   },
   {
     id: 21,
-    title: "Buku Ronggeng ",
+    title: "Buku Sejarah Cigalontang",
     shortDesc: `Buku ini menelusuri perjalanan panjang wilayah Cigalontang, Tasikmalaya, dari sebuah daerah agraris yang sarat cerita rakyat hingga tumbuh menjadi kawasan dinamis di lereng Gunung Galunggung. Mengangkat kisah asal-usulnya dari legenda Aki dan Nini Lontang hingga rekam jejak perjuangan masyarakat lokal, buku ini merangkum sistem irigasi kuno Solokan Pasir, keanekaragaman tradisi syukuran bumi, serta peninggalan seni Ronggeng Gunung. Tidak hanya sekadar catatan sejarah masa lalu, narasi di dalamnya secara kritis menelaah transformasi sosial-ekonomi masyarakat Cigalontang saat ini serta menawarkan refleksi penting dalam menjaga kearifan lokal di tengah arus modernisasi.`,
     fullDesc:
       `Buku ini menghadirkan narasi historis dan antropologis yang kaya mengenai salah satu wilayah penting di Kabupaten Tasikmalaya. Tidak sekadar merekam dokumen tertulis dan cerita tutur, karya ini menggali nilai-nilai hidup yang membentuk karakter masyarakat Cigalontang dari masa ke masa.
